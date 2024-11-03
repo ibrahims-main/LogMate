@@ -85,12 +85,20 @@ int main() {
 If you run the above code, `app.log` will contain something like this:
 
 ```css
-[2024-10-19 10:30:00] [DEBUG] - This is a debug message
-[2024-10-19 10:30:01] [INFO] - Informational message
-[2024-10-19 10:30:02] [WARNING] - This is a warning!
-[2024-10-19 10:30:03] [ERROR] - Error encountered in processing
-[2024-10-19 10:30:04] [CRITICAL] - Critical issue occurred!
-[2024-10-19 10:30:05] [CRITICAL] - This is a critical log after format and level change!
+<style>
+    .debug { color: gray; }
+    .info { color: green; }
+    .warning { color: orange; }
+    .error { color: red; }
+    .critical { color: darkred; }
+</style>
+
+<span class="debug">[2024-10-19 10:30:00] [DEBUG] - This is a debug message</span><br>
+<span class="info">[2024-10-19 10:30:01] [INFO] - Informational message</span><br>
+<span class="warning">[2024-10-19 10:30:02] [WARNING] - This is a warning!</span><br>
+<span class="error">[2024-10-19 10:30:03] [ERROR] - Error encountered in processing</span><br>
+<span class="critical">[2024-10-19 10:30:04] [CRITICAL] - Critical issue occurred!</span><br>
+<span class="critical">[2024-10-19 10:30:05] [CRITICAL] - This is a critical log after format and level change!</span>
 ```
 
 ## Customizing the Log
